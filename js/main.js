@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('.contact_form');
+  if (!form) return;
+
   form.addEventListener('submit', function(event) {
     const email = document.getElementById('email').value;
     const emailConfirm = document.getElementById('email_confirm').value;
