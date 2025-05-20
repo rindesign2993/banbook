@@ -45,7 +45,7 @@
       
         <p class="instruction">下記の必要項目をご入力いただき、送信ボタンをクリックしてください。</p>
       
-        <form class="contact_form" action="#" method="post">
+        <form class="contact_form" action="send_mail.php" method="post">
           <fieldset>
             <legend>お問い合わせ項目</legend>
             <label><input type="radio" name="inquiry" value="business"> 事業内容について</label>
@@ -110,6 +110,9 @@
             <input type="checkbox" name="agree_provision" required>
             上記フォームにご記入いただいた情報の当社海外グループ会社(当社海外グループ会社について)への提供に同意する
           </label>
+
+          <div class="g-recaptcha" data-sitekey="あなたのサイトキー"></div>
+          <script src="https://www.google.com/recaptcha/api.js" async defer></script>
       
           <button type="submit">送信</button>
         </form>
